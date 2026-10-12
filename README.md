@@ -28,7 +28,7 @@ Examined a simulated mailbox-suspension email containing a lookalike sender doma
 **Key learning:** Multiple independent indicators can reinforce suspicion, but the findings must be interpreted in context.
 
 **Report:** [Read Investigation 01](investigations/01-mailbox-warning-analysis.md)  
-**Sample:** [View the synthetic email](samples/01-synthetic-mailbox-warning.eml)
+**Sample:** [View the synthetic email](investigations/samples/01-synthetic-mailbox-warning.eml)
 
 ### Investigation 02 — Service-Desk Notification
 
@@ -39,7 +39,7 @@ Examined a routine-looking service-desk notification with passing authentication
 **Key learning:** A different Reply-To domain does not automatically indicate phishing, and analysts should avoid unsupported conclusions.
 
 **Report:** [Read Investigation 02](investigations/02-service-desk-notification-analysis.md)  
-**Sample:** [View the synthetic email](samples/02-service-desk-notification.eml)
+**Sample:** [View the synthetic email](investigations/samples/02-service-desk-notification.eml)
 
 ### Investigation 03 — Document-Sharing Email
 
@@ -50,7 +50,7 @@ Examined a document-sharing email with passing SPF, DKIM and DMARC results but a
 **Key learning:** Authentication can validate a message against its sending domain without proving that the domain belongs to the brand it claims to represent.
 
 **Report:** [Read Investigation 03](investigations/03-document-sharing-analysis.md)  
-**Sample:** [View the synthetic email](samples/03-document-sharing-notification.eml)
+**Sample:** [View the synthetic email](investigations/samples/03-document-sharing-notification.eml)
 
 ## Tools and Techniques
 
