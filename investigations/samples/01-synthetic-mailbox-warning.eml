@@ -1,0 +1,19 @@
+From: Microsoft 365 Security <security@micros0ft-support.example>
+Reply-To: account-review@case-review.example
+To: analyst@example.com
+Date: Mon, 12 Oct 2026 09:15:00 +0000
+Subject: [Action Required] Mailbox access will be suspended
+Message-ID: <training-001@mail.training.example>
+Authentication-Results: mx.training.example; spf=fail smtp.mailfrom=micros0ft-support.example; dkim=fail header.d=micros0ft-support.example; dmarc=fail header.from=micros0ft-support.example
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Your mailbox will be suspended in two hours unless you verify your account.
+
+To retain access, review your account immediately using the link below:
+
+hxxps://m365-secure-login[.]example/verify
+
+Failure to act may result in loss of access to your mailbox.
+
+Microsoft 365 Security Team
