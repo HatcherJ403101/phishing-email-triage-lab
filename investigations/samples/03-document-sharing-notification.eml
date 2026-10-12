@@ -1,0 +1,23 @@
+From: Microsoft SharePoint <sharepoint-notice@micros0ft-docs.example>
+Reply-To: sharepoint-notice@micros0ft-docs.example
+To: analyst@example.com
+Date: Mon, 12 Oct 2026 11:45:00 +0000
+Subject: A document has been shared with you
+Message-ID: <document-share-training-003@mail.training.example>
+Authentication-Results: mx.training.example; spf=pass smtp.mailfrom=micros0ft-docs.example; dkim=pass header.d=micros0ft-docs.example; dmarc=pass header.from=micros0ft-docs.example
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+A colleague has shared a document with you titled "Updated Staff Information".
+
+Please review the document today to ensure your information is up to date.
+
+Open the shared document using the link below:
+
+hxxps://sharepoint-document-review[.]example/open/003
+
+If you were not expecting this document, verify the request with the sender through a trusted communication channel before proceeding.
+
+Microsoft SharePoint Notifications
