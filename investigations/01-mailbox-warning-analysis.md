@@ -42,3 +42,26 @@ These results strengthen the suspicious indicators already identified during tri
 ### Investigative Limitation
 
 The sample contains no verified server-side authentication logs or real DNS records. The authentication results can therefore be used to practise interpreting SPF, DKIM and DMARC, but not to establish the behaviour of a real sender or mail system.
+## 3. URL Indicator Analysis
+
+### Observed Indicator
+
+The email contains the defanged URL:
+
+`hxxps://m365-secure-login[.]example/verify`
+
+### Analysis
+
+The hostname uses Microsoft 365-related wording, while the `/verify` path is consistent with the type of wording that might be used to encourage a recipient to review an account.
+
+This supports the concern that the message is attempting to appear legitimate and direct the recipient towards an account-verification page. However, the URL's wording alone cannot establish the operator's identity or prove malicious intent.
+
+The `.example` domain is a placeholder used for this synthetic exercise. No live destination was visited, and no reputation, DNS or hosting checks were performed.
+
+### Safe Handling
+
+The URL was kept defanged in the report to reduce the risk of accidental navigation. It was not opened, resolved or submitted to an external scanning service.
+
+### Limitation
+
+Because the destination is a reserved example domain, the actual site's content, ownership, reputation and behaviour cannot be assessed from this sample.
