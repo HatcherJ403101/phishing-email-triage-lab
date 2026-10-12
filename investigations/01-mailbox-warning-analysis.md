@@ -65,3 +65,41 @@ The URL was kept defanged in the report to reduce the risk of accidental navigat
 ### Limitation
 
 Because the destination is a reserved example domain, the actual site's content, ownership, reputation and behaviour cannot be assessed from this sample.
+## 4. Risk Assessment and Recommended SOC Response
+
+### Assessment
+
+**Training assessment: High suspicion**
+
+The sample contains several mutually reinforcing phishing indicators:
+
+- A lookalike sender domain intended to resemble a recognised service.
+- A Reply-To address using a different domain.
+- Urgent language threatening mailbox suspension.
+- A request to verify an account through a supplied link.
+- Simulated SPF, DKIM and DMARC failures.
+
+The combination warrants a cautious response in a real environment. The sample does not establish that a real account was targeted or compromised.
+
+### Recommended SOC Actions
+
+1. **Contain and preserve:** If received in a real organisation, quarantine the email where appropriate and preserve the original message, headers and relevant email-security logs.
+2. **Identify exposure:** Determine whether the email was delivered to other users, opened, replied to or reported. Do not assume that a recipient clicked the link without supporting evidence.
+3. **Investigate indicators:** Review the sender and Reply-To domains, authentication results and URL using approved organisational security tools. Do not visit the link directly.
+4. **Search for related activity:** Look for matching messages, similar sender patterns and relevant email-security alerts across the organisation.
+5. **Respond proportionately:** Remove confirmed malicious messages according to organisational procedures. Block indicators only after appropriate validation and consideration of legitimate business impact.
+6. **Escalate if necessary:** If evidence indicates that a recipient submitted credentials, follow the organisation's incident-response process for account protection, credential reset, session revocation and relevant identity-log review.
+
+### Severity Considerations
+
+The synthetic email is assessed as highly suspicious based on its combined indicators. A real incident's severity would depend on additional factors, including the recipients affected, whether the message was delivered or acted upon, evidence of credential submission, and any subsequent account activity.
+
+### Investigation Limitations
+
+This exercise used fabricated email content and simulated authentication results. No real email infrastructure was tested, no live URL was visited, and no recipient impact was established. The assessment demonstrates an investigation method rather than a confirmed real-world incident.
+
+## 5. Conclusion
+
+This investigation demonstrated how sender details, social-engineering techniques, authentication results and URL characteristics can be combined to assess a potentially suspicious email.
+
+The findings show why email triage should consider multiple indicators together rather than relying on any single signal. The investigation also reinforced safe handling practices, evidence-based conclusions and proportionate response recommendations.
