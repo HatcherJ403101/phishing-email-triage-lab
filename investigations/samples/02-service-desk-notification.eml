@@ -1,0 +1,20 @@
+From: Northstar IT Service Desk <notifications@service-desk.example>
+Reply-To: tickets@northstar-support.example
+To: analyst@example.com
+Date: Mon, 12 Oct 2026 10:30:00 +0000
+Subject: Update to service request #4821
+Message-ID: <ticket-4821-training@service-desk.example>
+Authentication-Results: mx.training.example; spf=pass smtp.mailfrom=service-desk.example; dkim=pass header.d=service-desk.example; dmarc=pass header.from=service-desk.example
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+There has been an update to your service request #4821.
+
+The support team has added a note to the ticket. You can review the update through your organisation's usual service-desk portal.
+
+If you need assistance, please reply to this message or contact your internal IT team.
+
+Regards,
+Northstar IT Service Desk
